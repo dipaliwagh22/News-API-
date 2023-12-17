@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS :~)</title>
+    <link rel="icon" href="./news8.jpg">
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <div class="heading">
+                <label><span>N</span>ewsAPI</label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 61 62" fill="none">
+                    <circle cx="30.499" cy="31" r="30.1" fill="#E84848" />
+                </svg>
+                <label>Org</label>
+            </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="economics" onclick="onNavItemClick('finance')">Economics</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Search">
+                <button id="search-button" class="search-button">GO</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1><span>TOP</span> NEWS FROM INDIA</h1>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="#" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title"></h3>
+                <h6 class="news-source" id="news-source"></h6>
+                <p class="news-desc" id="news-desc"></p>
+                <button>Read more..</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="news.js"></script>
+</body>
+</html>
