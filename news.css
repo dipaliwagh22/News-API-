@@ -93,6 +93,7 @@ nav {
     border-radius: 4px;
     border: 2px solid #f8abab;
     font-family: "Roboto", sans-serif;
+    outline-color: #ee8d8d;
 }
 
 .news-input::placeholder {
